@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
+import DestinationHeader from './DestinationHeader.js';
+import DestinationFooter from './DestinationFooter.js';
 import './App.css';
+import { fetchDestinations } from './FetchFunctions.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends React.Component {
+  state = {
+    destinations: [],
+  }
 
-export default App;
+  componentDidMount = async () => {
+    const data = await fetchDestinations();
+
+    this.setState({
+      destinations: data.body,
+    })
+  }
+    render() {
+      return (
+        <div>
+          <DestinationHeader />
+          <div>
+            <h2 className='body-container'>Destinations:</h2>
+            <div className='destination-container'>
+            {
+              this.state.destinations.map((destination, i) => {
+              return <div className='destination-option' key={i}>Destination: {destination.city}, {destination.country} takes {destination.flight_hours} hours to fly from Portland and passports are {destination.need_passport && 'not '}required.</div>
+              })
+            }
+            </div>
+          </div>
+          <DestinationFooter />
+        </div>
+      );
+    }
+  }
+  
+  export default App;

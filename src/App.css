@@ -6,6 +6,16 @@
   --color5: #eef36aff;
 }
 
+.detail-container {
+  margin-top: 200px;
+  background-color: var(--color5);
+  border: 2px solid var(--color4);
+  border-radius: 10px;
+  width: 600px;
+  height: 450px;
+  padding: 10px;
+}
+
 header {
   position: fixed;
   border-bottom: 2px solid var(--color4);
@@ -43,7 +53,7 @@ body {
   border: 2px solid var(--color4);
   border-radius: 10px;
   width: 200px;
-  height: 400px;
+  height: 150px;
   padding: 10px;
 }
 

@@ -8,7 +8,8 @@ class DestinationHeader extends React.Component {
         <header>
             <h1>Destinations From Portland, Oregon</h1>
             <p>Where could you be in a few hours?</p>
-            <Link to='create'>Admin</Link>
+            <Link to='/create'>Admin</Link>
+            <Link to='/'>List Page</Link>
         </header>
       );
     }

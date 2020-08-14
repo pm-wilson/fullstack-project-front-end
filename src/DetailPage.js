@@ -17,7 +17,7 @@ class DetailPage extends React.Component {
     
     render() {
       return (
-        <div>
+        <div className='detail-view'>
           <div className="detail-container">
               Wishing to go to {this.state.destination.city}, {this.state.destination.country}? It is only {this.state.destination.flight_hours} hours away {this.state.destination.need_passport && 'and do not forget the passport'}!
           </div>

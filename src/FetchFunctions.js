@@ -9,3 +9,7 @@ export function fetchDestinations() {
 export function fetchDestination(id) {
     return request.get(`${URL}/destinations/${id}`);
 }
+
+export function createDestination(destinationData) {
+    return request.post(`${URL}/destinations`, destinationData);
+}

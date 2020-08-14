@@ -1,5 +1,5 @@
 import React from 'react';
-import { fetchDestination } from './fetchFunctions.js';
+import { fetchDestination } from './FetchFunctions.js';
 import { Link } from 'react-router-dom';
 
 class DetailPage extends React.Component {

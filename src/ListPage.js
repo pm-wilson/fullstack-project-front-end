@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { fetchDestinations } from './fetchFunctions.js';
+import { fetchDestinations } from './FetchFunctions.js';
 import { Link } from 'react-router-dom';
 
 class ListPage extends React.Component {

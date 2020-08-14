@@ -1,5 +1,5 @@
 import React from 'react';
-import { createDestination } from './fetchFunctions.js';
+import { createDestination } from './FetchFunctions.js';
 
 class CreatePage extends React.Component {
     state = {

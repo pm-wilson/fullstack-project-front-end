@@ -29,6 +29,7 @@ footer {
 body {
   margin-top: 100px;
   background-color: var(--color2);
+  margin-bottom: 50px;
 }
 
 .create-area {
@@ -81,13 +82,20 @@ a {
 }
 
 .detail-container {
-  margin-top: 100px;
+  margin-top: 200px;
   background-color: var(--color5);
   border: 2px solid var(--color4);
   border-radius: 10px;
-  width: 600px;
-  height: 250px;
-  padding: 50px;
+  width: 660px;
+  height: 700px;
+  padding: 20px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 form {
@@ -103,4 +111,11 @@ form {
 
 input {
   margin-left: 20px;
+}
+
+img {
+  width: 660px;
+  height: auto;
+  border: 2px solid var(--color4);
+  border-radius: 10px;
 }

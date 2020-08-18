@@ -97,8 +97,6 @@ class CreatePage extends React.Component {
               <label> 
                 <input onChange={this.handlePassportChange} type='radio' name='passport' value='yes'/>
                 Passport is Required
-              </label>
-              <label>
                 <input onChange={this.handlePassportChange} type='radio' name='passport' value='no'/>
                 Passport not Required
               </label>
